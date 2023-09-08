@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800|Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+/* navbar css styling */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  padding: 0;
+}
+.border1, .border3{
+  margin: 15%;
+}
+.border2{
+  margin: 5%;
+
+}
+.border4{
+  margin: 10%;
+}
+.navbar {
+
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it's above other content */
+}
+.navbar a {
+  color: var(--text-color);
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 20.1px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: var(--hover-color);
+  text-shadow: 0 0 10px rgb(181, 245, 245), 0 0 20px rgb(181, 245, 245),
+    0 0 30px rgba(181, 245, 245), 0 0 40px rgba(181, 245, 245),
+    0 0 70px rgba(181, 245, 245), 0 0 80px rgba(181, 245, 245),
+    0 0 100px rgba(181, 245, 245), 0 0 150px rgba(181, 245, 245);
+}
+
+:root {
+  --text-color: rgb(74, 121, 252);
+  --hover-color: #fff;
+  --neon-box-shadow: 0 0.5rem #44fcfc;
+  --font-neon-text-shadow: 0 0 10px rgba(185, 235, 250, 0.32),
+    0 0 20px rgba(185, 235, 250, 0.32), 0 0 30px rgba(185, 235, 250, 0.32),
+    0 0 40px rgba(185, 235, 250, 0.32), 0 0 70px rgba(1185, 235, 250, 0.32),
+    0 0 80px rgba(185, 235, 250, 0.32), 0 0 100px rgba(185, 235, 250, 0.32),
+    0 0 150px rgba(185, 235, 250, 0.32);
+}
+
+body {
+  background: rgb(220, 236, 250);
+  color: #154275;
+}
+/* slogan styling*/
+h2 {
+  margin-top: 250px;
+  color: rgb(74, 121, 252);
+  font-size: 3.5rem;
+  font-family: "DM Serif Display";
+}
+/* services card styling*/
+.cards {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+}
+.cards h2 {
+  font-size: 40px;
+  margin: 0 0 30px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: black;
+}
+.card{
+  background-color: #B9D9EB;
+}
+.services {
+  display: flex;
+  align-items: center;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.content .fa {
+  font-size: 70px;
+  margin: 16px 0;
+}
+.content {
+  flex: 1 1 100%;
+}
+.content:hover {
+  color: white;
+}
+.content:hover a {
+  border-color: white;
+  background: white;
+}
+h2:hover{
+color: white;
+}
+.content-1:hover {
+  border-color: #4267b2;
+  background: #4267b2;
+}
+.content-1:hover a {
+  color: #4267b2;
+}
+.content-2:hover {
+  border-color: #4267b2;
+  background: #4267b2;
+}
+.content-2:hover a {
+  color: #4267b2;
+}
+.content-3:hover {
+  border-color: #4267b2;
+  background: #4267b2;
+}
+.content-3:hover a {
+  color: #4267b2;
+}
+.content h2 {
+  font-size: 30px;
+  margin: 16px 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.content p {
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+}
+.content a {
+  margin: 22px 0;
+  background: rgb(74, 121, 252);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid black;
+  padding: 15px 0;
+  border-radius: 25px;
+  transition: 0.3s ease;
+}
+.content a:hover {
+  border-radius: 4px;
+}
+/* trying to see the css cards */
+
+.card-image {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.img1 {
+  background-image: url("images/appointment-24.png");
+  margin: 20%;
+
+}
+/**/
+#about-us-slogan {
+  font-size: 21pt;
+  font-family: "DM Serif Display";
+}
+.bold-p {
+  font-weight: bold;
+}
+.about-us-images {
+  height: 100px;
+}
+
+.justify-content-md-center {
+  padding-top: 40px;
+  padding-bottom: 5px;
+}
+.about-us {
+  padding-top: 30px;
+}
+.bg-info {
+  background-color: #6098cc !important;
+}
+/*contact form styling*/
+.container-form {
+  margin-top: 20px;
+}
+ul {
+  list-style: none;
+}
+.container-form {
+  max-width: 600px;
+  padding: 20px;
+  margin-left: 35%;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+h1 {
+  color: #333;
+  margin-right: 10%;
+}
+
+form {
+  width: 80%;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  background-color: #B9D9EB;
+  padding: 5%;
+  margin-left:10% ;
+
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom:10%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+/*Social media icon styling*/
+#whatsapp-icon {
+  color: #27d367;
+  font-size: 1.5rem;
+}
+#facebook-icon {
+  color: #1093f4;
+  font-size: 1.5rem;
+}
+#twitter-icon {
+  color: #0f1419;
+  font-size: 1.5rem;
+}
+

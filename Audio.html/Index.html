@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>healthchat</title>
+    <style>
+        /* Add your CSS styles for the chat interface here */
+        #chat-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .chat-message {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="chat-container">
+        <div id="chat-messages"></div>
+        <input type="text" id="user-input" placeholder="Type your message...">
+        <button id="send-button">Send</button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const chatMessages = document.getElementById("chat-messages");
+            const userInput = document.getElementById("user-input");
+            const sendButton = document.getElementById("send-button");
+
+            sendButton.addEventListener("click", function () {
+                const userMessage = userInput.value.trim();
+                if (userMessage === "") return;
+
+                // Display the user's message in the chat
+                displayMessage(userMessage, "user");
+
+                // Simulate a chatbot response
+                const botResponse = getBotResponse(userMessage);
+                displayMessage(botResponse, "bot");
+
+                // Clear the user input field
+                userInput.value = "";
+            });
+
+            function displayMessage(message, sender) {
+                const messageDiv = document.createElement("div");
+                messageDiv.classList.add("chat-message", sender);
+                messageDiv.innerText = `${sender.charAt(0).toUpperCase() + sender.slice(1)}: ${message}`;
+                chatMessages.appendChild(messageDiv);
+            }
+
+            function getBotResponse(userMessage) {
+                // Here, you can implement your chatbot logic to generate a response
+                // For simplicity, let's return predefined responses
+                if (userMessage.toLowerCase().includes("hello")) {
+                    return "Hello! How can I help you?";
+                } else if (userMessage.toLowerCase().includes("how are you")) {
+                    return "I'm just a chatbot. I don't have feelings, but thanks for asking!";
+                } else {
+                    return "I'm just a simple chatbot. I don't understand that.";
+                }
+            }
+        });
+    </script>
+    
+</body>
+</html>
